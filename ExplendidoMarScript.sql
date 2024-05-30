@@ -68,3 +68,10 @@ Select 	Usuario.nome as NomeUsuario,
 		PontuaçãoQuiz.Pontuação as Pontuação
 		from Usuario join PontuaçãoQuiz
 		on idUsuario = PontuaçãoQuiz.fkUsuario;
+        
+SELECT idUsuario,
+		nome,
+		email, 
+		PontuacaoQuiz.Pontuacao as 'PontuacaoQuiz' 
+        FROM usuario join PontuacaoQuiz where idUsuario = 1;
+
