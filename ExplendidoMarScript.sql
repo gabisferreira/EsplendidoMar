@@ -42,6 +42,8 @@ constraint fkQuizUsuario foreign key (fkQuiz) references Quiz (idQuiz));
 
 select * from PontuacaoQuiz;
 
+select Pontuacao from PontuacaoQuiz;
+
 Insert into PontuacaoQuiz values
 (1, 1, 1, 8);
 
@@ -61,3 +63,4 @@ SELECT idUsuario,
 		email, 
 		PontuacaoQuiz.Pontuacao as 'PontuacaoQuiz' 
         FROM Usuario join PontuacaoQuiz where idUsuario = 1;
+        
